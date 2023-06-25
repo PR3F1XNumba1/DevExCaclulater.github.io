@@ -254,7 +254,7 @@ h1 {
   </style>
 </head>
 <body>
-  <h1>Donate to Me</h1>
+  <h1>Donate Money to me</h1>
   
   <a class="donate-button" href="https://paypal.me/gametime910?country.x=US&locale.x=en_US" target="_blank">Donate Now</a>
 </body>
