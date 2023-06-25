@@ -1,4 +1,3 @@
-
 <html>
 <head>
   <title>Roblox DevEx Calculator</title>
@@ -30,6 +29,15 @@
       border-radius: 4px;
     }
 
+    select {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #fff;
+    }
+
     button {
       display: block;
       margin-top: 10px;
@@ -58,6 +66,15 @@
   <label for="robux-earned-input">Amount of Robux earned:</label>
   <input type="number" id="robux-earned-input">
 
+  <label for="currency-select">Select currency:</label>
+  <select id="currency-select">
+    <option value="USD">USD</option>
+    <option value="EUR">EUR</option>
+    <option value="GBP">GBP</option>
+    <option value="JPY">JPY</option>
+    <!-- Add more currency options as needed -->
+  </select>
+
   <button onclick="calculateDevEx()">Calculate DevEx</button>
 
   <p id="devex-result"></p>
@@ -72,11 +89,18 @@
         return;
       }
 
-      var devExRate = 0.0035; // DevEx rate of 0.35%
+      var currencySelect = document.getElementById("currency-select");
+      var selectedCurrency = currencySelect.value;
+
+      var exchangeRates = {
+        USD: 0.0035, // DevEx rate for USD (0.35%)
+        EUR: 0.003, // DevEx rate for EUR (0.30%)
+        GBP: 0.0025, // DevEx rate for GBP (0.25%)
+        JPY: 0.004, // DevEx rate for JPY (0.40%)
+        // Add more currency rates as needed
+      };
+
+      var devExRate = exchangeRates[selectedCurrency];
       var devExAmount = robuxEarned * devExRate;
 
-      document.getElementById("devex-result").textContent = "Based on the Robux earned, the DevEx amount is: " + devExAmount.toFixed(2) + " USD.";
-    }
-  </script>
-</body>
-</html>
+      document.getElementById("devex-result
