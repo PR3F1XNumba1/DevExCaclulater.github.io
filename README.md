@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Roblox Tax Calculator</title>
+  <title>Roblox DevEx Calculator</title>
   <style>
+    /* Add your CSS styles here */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -52,29 +53,29 @@
   </style>
 </head>
 <body>
-  <h1>Welcome to the Roblox Tax Calculator!</h1>
+  <h1>Roblox DevEx Calculator</h1>
 
   <label for="robux-earned-input">Amount of Robux earned:</label>
   <input type="number" id="robux-earned-input">
 
-  <button onclick="calculateTax()">Calculate Tax</button>
+  <button onclick="calculateDevEx()">Calculate DevEx</button>
 
-  <p id="tax-owed-result"></p>
+  <p id="devex-result"></p>
 
   <script>
-    function calculateTax() {
+    function calculateDevEx() {
       var robuxEarnedInput = document.getElementById("robux-earned-input");
       var robuxEarned = parseInt(robuxEarnedInput.value);
 
       if (isNaN(robuxEarned) || robuxEarned < 0) {
-        document.getElementById("tax-owed-result").textContent = "Invalid input. Please enter a positive number.";
+        document.getElementById("devex-result").textContent = "Invalid input. Please enter a positive number.";
         return;
       }
 
-      var taxRate = 0.3; // Assuming a 30% tax rate
-      var taxOwed = robuxEarned * taxRate;
+      var devExRate = 0.0035; // DevEx rate of 0.35%
+      var devExAmount = robuxEarned * devExRate;
 
-      document.getElementById("tax-owed-result").textContent = "Based on the Robux earned, the tax owed is: " + taxOwed + " Robux.";
+      document.getElementById("devex-result").textContent = "Based on the Robux earned, the DevEx amount is: " + devExAmount.toFixed(2) + " USD.";
     }
   </script>
 </body>
