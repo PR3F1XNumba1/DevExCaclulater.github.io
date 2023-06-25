@@ -63,7 +63,7 @@
 <body>
   <h1>Roblox DevEx Calculator</h1>
 
-  <label for="robux-earned-input">Amount of Robux earned:</label>
+  <label for="robux-earned-input">Amount of Robux:</label>
   <input type="number" id="robux-earned-input">
 
   <label for="currency-select">Select currency:</label>
