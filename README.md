@@ -257,4 +257,3 @@ h1 {
   <a class="donate-button" href="https://paypal.me/gametime910?country.x=US&locale.x=en_US" target="_blank">Donate me money</a>
 </body>
 </html>
-</html>
