@@ -253,6 +253,6 @@ h1 {
   </style>
 </head>
 <body>
-  <a class="donate-button" href="https://paypal.me/gametime910?country.x=US&locale.x=en_US" target="_blank">Donate money</a>
+  <a class="donate-button" href="https://paypal.me/gametime910?country.x=US&locale.x=en_US" target="_blank">Donate money💰</a>
 </body>
 </html>
