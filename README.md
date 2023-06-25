@@ -138,6 +138,101 @@
       document.getElementById("devex-result").textContent = "Based on the Robux earned, the DevEx amount is: " + devExAmount.toFixed(2) + " " + selectedCurrency;
     }
   </script>
-   <a class="donation-link" href="https://www.roblox.com/catalog/6735118737/Dark-Blue-Fendi-Hoodie" target="_blank">Donate Robux</a>
+   <html>
+<head>
+  <title>Roblox DevEx Calculator</title>
+  <style>
+   /* Styles for the heading */
+h1 {
+  color: #337ab7;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Styles for the calculator form */
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.form-container input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-container button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #337ab7;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Styles for the result paragraph */
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Styles for the donation button */
+.donate-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #337ab7;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.donate-button:hover {
+  background-color: #23527c;
+}
+
+    .donate-button {
+      display: block;
+      margin: 10px auto;
+      padding: 10px 20px;
+      font-size: 18px;
+      text-align: center;
+      color: #fff;
+      background-color: #337ab7;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <a class="donate-button" href="https://www.roblox.com/catalog/6735118737/Dark-Blue-Fendi-Hoodie" target="_blank">Donate Robux</a>
+
+</body>
+</html>
 </body>
 </html>
