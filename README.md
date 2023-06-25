@@ -1,4 +1,4 @@
-<html>
+o<html>
 <head>
   <title>Roblox DevEx Calculator</title>
   <style>
@@ -254,9 +254,7 @@ h1 {
   </style>
 </head>
 <body>
-  <h1>Donate Money to me</h1>
-  
-  <a class="donate-button" href="https://paypal.me/gametime910?country.x=US&locale.x=en_US" target="_blank">Donate Now</a>
+  <a class="donate-button" href="https://paypal.me/gametime910?country.x=US&locale.x=en_US" target="_blank">Donate me money</a>
 </body>
 </html>
 </html>
